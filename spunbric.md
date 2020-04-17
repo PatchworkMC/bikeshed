@@ -6,7 +6,7 @@
 - It must be possible to represent fabric's `ModContainer` as a `PluginContainer`
   - CANNOT USE MIXIN SINCE FABRIC LOADER EXISTS TOO EARLY TO DO THAT.
     - Idea: A sort of `ModContainer.ViewFactory<T>` which is a `Function<api.ModContainer, T>`, registered in `api.FabricLoader`
-      - To convert to a view, `ModContainer#as(T) -> T throws IllegalArgumentException`.
+      - To convert to a view, `ModContainer#as(Class<T>) -> T throws IllegalArgumentException`.
        - These views are prebaked and cached.
        - It's one solution to representing fabric mods that already exist as `ModContainers` as Sponge's `Plugin Container`
 
