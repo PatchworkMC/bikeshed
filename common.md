@@ -11,3 +11,7 @@ Detailed Explanation...
 ```
 
 Links to code should be done via linking to a gist inside of the detailed explanation.
+
+## Begin
+
+Change setupMods() -> parseEntrypoints(), improperly described functionality - Glitch
